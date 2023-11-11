@@ -1,6 +1,5 @@
 #!/bin/sh
 
-read PYTHON_PATH
 PYTHON_PATH -m ensurepip --upgrade
 
 mkdir -p /tmp/pbkt-installation
