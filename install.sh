@@ -2,7 +2,7 @@
 
 read -p "teste >>> " TESTE
 
-echo $TESTE
+echo "teste=$TESTE"
 
 echo ${PYTHON_PATH} -m ensurepip --upgrade
 
