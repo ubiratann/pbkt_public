@@ -18,5 +18,5 @@ fi;
 curl -L -O https://githubraw.com/ubiratann/PBKT/main/requirements.txt  
 ${PYTHON_PATH} -m pip install -r requirements.txt
 
-mv main.py tmp/usr/bin/pbkt
-chmod a=rx tmp/usr/bin/pbkt
+mv main.py usr/bin/pbkt
+chmod a=rx usr/bin/pbkt
