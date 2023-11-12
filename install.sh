@@ -6,7 +6,7 @@ mkdir -p /tmp/pbkt-installation
 
 cd /tmp/pbkt-installation
 
-curl -L -O https://githubraw.com/ubiratann/PBKT/main/main.py
+curl -sS -L -O https://githubraw.com/ubiratann/PBKT/main/main.py
 
 if [ -n "$(uname -a | grep -i freebsd)" ]; 
 then 
@@ -15,7 +15,7 @@ else
   sed -i 's|#!/bin/python3.10|#!'${PYTHON_PATH}'|' main.py
 fi;
 
-curl -L -O https://githubraw.com/ubiratann/PBKT/main/requirements.txt  
+curl -sS -L -O https://githubraw.com/ubiratann/PBKT/main/requirements.txt  
 ${PYTHON_PATH} -m pip install -r requirements.txt
 
 mv main.py usr/bin/pbkt
