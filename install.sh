@@ -1,5 +1,9 @@
 #!/bin/sh 
 
+read -p "teste >>> " TESTE
+
+echo $TESTE
+
 echo ${PYTHON_PATH} -m ensurepip --upgrade
 
 mkdir -p /tmp/pbkt-installation
